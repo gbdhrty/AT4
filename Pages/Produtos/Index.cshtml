@@ -1,0 +1,23 @@
+﻿@page
+@model AT4.Pages.Produtos.IndexModel
+@{
+    ViewData["Title"] = "Produtos";
+}
+<h2>@ViewData["Title"]</h2>
+<table class="table w-50">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var produto in Model.Produtos) {
+            <tr>
+                <td>@produto.Nome</td>
+                <td>@produto.Preco</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="/Produtos/Criar" class="btn btn-primary">Adicionar Produto</a>

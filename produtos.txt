@@ -1,0 +1,5 @@
+Arroz;8,89
+Feijão;7,99
+Macarrão;5,99
+Açúcar;5,99
+Ovo;1,99

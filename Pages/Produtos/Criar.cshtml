@@ -1,0 +1,17 @@
+﻿@page
+@model AT4.Pages.Produtos.CriarModel
+@{
+    ViewData["Title"] = "Adicionar Produto";
+}
+<h2>@ViewData["Title"]</h2>
+<form method="post" class="w-50">
+    <div class="mb-3">
+        <label for="Nome" class="form-label">Nome do produto:</label>
+        <input type="text" id="Nome" name="Produto.Nome" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="Preco" class="form-label">Preço do produto:</label>
+        <input type="text" id="Preco" name="Produto.Preco" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+</form>
